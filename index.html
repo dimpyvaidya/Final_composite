@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fashion Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Fashion Club - Watches and Handbags" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="header logo">
+                <a href=""><img src="images/logo2.png" alt=" " />
+                    <h1>Fashion<span>CLUB</span></h1>
+                </a>
+            </div>
+
+            <div class="header">
+                <div class="searchbox">
+                    <input type="search" id="product_name" class="searcharea" name="Search" placeholder="Search for a Product..." required="">
+                    <button onClick="searchProduct()" type="button" class="searchbtn" aria-label="Left Align">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div>
+                <nav class="navbar-default">
+                    <div>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    </div>
+                    <div id="bs-megadropdown-tabs">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="#" data-type="wacthes" class="filter"><span>Watches</span></a></li>
+                            <li class=""><a href="#" data-type="handbag" class="filter"><span>Handbags</span></a></li>
+                            <li class=""><a href="#"><span>Login</span></a></li>
+                            <li class=""><a href="#"><span>My Cart</span></a></li>
+                        </ul>
+                        <button id="clr_btn" class="searchbtn hidden" onClick="clearAllFilters()">Clear searches</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="filter_portion left_filter_portion">
+                <div>
+                    <h3>Sort</h3>
+                    <div>
+                        <div class="ecommerce_color">
+                            <ul>
+                                <li><input type="radio" name="sort" class="sort-filter" data-type='name' data-val="asc" href="#"> Ascending</li>
+                                <li><input type="radio" name="sort" class="sort-filter" data-type='name' data-val="desc" href="#"> Decending</li>
+                                <li><input type="radio" name="sort" class="sort-filter" data-type='price' data-val="asc" href="#"> Price low to high</li>
+                                <li><input type="radio" name="sort" class="sort-filter" data-type='price' data-val="desc" href="#"> Price high to low</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Price</h3>
+                    <div>
+                        <div class="ecommerce_color">
+                            <ul>
+                                <li><input type="checkbox" class="price-filter" data-type='price' data-val='100' href="#"> Less Than $100</li>
+                                <li><input type="checkbox" class="price-filter" data-type='price' data-val='200' href="#"> Less Than $200</li>
+                                <li><input type="checkbox" class="price-filter" data-type='price' data-val='300' href="#"> Less Than $300</li>
+                                <li><input type="checkbox" class="price-filter" data-type='price' data-val='500' href="#"> Less Than $500</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Categories</h3>
+                    <div>
+                        <div class="ecommerce_type">
+                            <ul>
+                                <li><input type="checkbox" class="attr-filter" data-type='type' data-val='casual' href="#"> Casual watch</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='type' data-val='sports' href="#"> Sports watch</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='type' data-val='leather' href="#"> Leather strap</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='type' data-val='chain' href="#"> Chain type</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Color</h3>
+                    <div>
+                        <div class="ecommerce_color">
+                            <ul>
+                                <li><input type="checkbox" class="attr-filter" data-type='color' data-val='all' href="#"><i></i> Mixed</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='color' data-val='brown' href="#"><i></i> Brown</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='color' data-val='gold' href="#"><i></i> Gold</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='color' data-val='black' href="#"><i></i> Black</li>
+                                <li><input type="checkbox" class="attr-filter" data-type='color' data-val='blue' href="#"><i></i> Blue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Size</h3>
+                    <div>
+                        <div class="ecommerce_color ">
+                            <ul>
+                                <li><input type='checkbox' class="attr-filter" data-type='size' data-val='small' href="#"> Small</li>
+                                <li><input type='checkbox' class="attr-filter" data-type='size' data-val='medium' href="#"> Medium</li>
+                                <li><input type='checkbox' class="attr-filter" data-type='size' data-val='large' href="#"> Large</li>
+                                <li><input type='checkbox' class="attr-filter" data-type='size' data-val='extra-large' href="#"> Extra Large</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ratings</h3>
+                    <div>
+                        <div class="ecommerce_type">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="r1" class="star-filter" data-type='rating' data-val='5' />
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true"> 5
+                                </li>
+                                <li><input type="radio" name="r1" class="star-filter" data-type='rating' data-val='4' />
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true"> 4
+                                </li>
+                                <li><input type="radio" name="r1" class="star-filter" data-type='rating' data-val='3' />
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true"> 3
+                                </li>
+                                <li><input type="radio" name="r1" class="star-filter" data-type='rating' data-val='2' />
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true"> 2
+                                </li>
+                                <li><input type="radio" name="r1" class="star-filter" data-type='rating' data-val='1' />
+                                    <img src='images/star.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true">
+                                    <img src='images/star-gray.png' class="starimg" aria-hidden="true"> 1
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product description in detail-->
+            <div class="searcharea all_product_block" id="products_list"></div>
+            <div id="details" class="hidden">
+                <div>
+                    <a href="javascript:;" onclick="backToList()">Back to List</a>
+                    <div id="detail-21">
+                        <div class="header">
+                            <div>
+                                <div id="pdetails_image"> </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="pdetails_name"> </h3>
+                            <h3 id="pdetails_price"> </h3>
+                            <h4>
+                                Category: <span id="pdetails_category"></span> | Type: <span id="pdetails_type"></span> | Size: <span id="pdetails_size"></span> | Color: <span id="pdetails_color"></span>
+                            </h4>
+                            <p id="pdetails_desc"> </p>
+                            <div id="pdetails_rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" id="pagination_bloack">
+                <ul class="pagination">
+                    <li class="page-item"><a href="javascript:prevPage()" id="btn_prev" href="#">Previous</a></li>
+                    <li class="page-item"><span id="page"></span></li>
+                    <li class="page-item"><a href="javascript:nextPage()" id="btn_next" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p class="copy-right"><strong>&copy 2019 FashionClub.com, L.P. All rights reserved.</strong></p>
+            <p>FashionClub.com trademarks or registered trademarks of OutErra.com, LP in the Canada and/or other countries. All other trademarks are property of their respective owners.</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
