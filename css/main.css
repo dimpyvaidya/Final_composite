@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: #337ab7;
+    color: black;
     text-decoration: none;
 }
 
@@ -42,23 +42,6 @@ h5,
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.searchbtn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 2;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
 }
 
 .nav {
@@ -193,11 +176,10 @@ img {
 }
 
 .logo {
-    width: 50%;
-    float: left;
+    width: 100%;
+    height: 300%;
 }
 
-.logo a h1,
 .footer a h3 {
     text-align: left;
     color: #000;
@@ -207,21 +189,8 @@ img {
 
 .logo img,
 .footer img {
-    width: 7%;
-    position: absolute;
+    width: 30%;
     top: 0;
-    left: 115px;
-}
-
-.logo a h1 span,
-.footer a h3 span {
-    color: #999;
-    font-size: 15px;
-    display: inline-block;
-    letter-spacing: 0;
-    position: absolute;
-    top: 15px;
-    left: 147px;
 }
 
 .header-bottom {
@@ -241,13 +210,29 @@ img {
 }
 
 .searchbox input[type="search"] {
-    padding: 10px;
+    padding: 12px;
     font-size: 1em;
     color: #999;
     outline: none;
     border: 1px solid #cccccc;
     background: none;
     transition: 0.5s all;
+}
+
+.searchbtn {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .navbar {
@@ -340,6 +325,10 @@ p.copy-right a:hover {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        width: 5%;
+        height: 70%;
+    }
     .container {
         width: 750px;
     }
@@ -375,8 +364,6 @@ p.copy-right a:hover {
     .header,
     .searcharea {
         float: left;
-    }
-    .searcharea {
         width: 66.66666667%;
     }
     .header {
