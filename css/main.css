@@ -38,10 +38,16 @@ h5,
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     margin-right: auto;
     margin-left: auto;
+}
+
+.logo_banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
 }
 
 .nav {
@@ -176,8 +182,8 @@ img {
 }
 
 .logo {
-    width: 100%;
-    height: 300%;
+    width: 50%;
+    height: 150%;
 }
 
 .footer a h3 {
@@ -185,12 +191,6 @@ img {
     color: #000;
     font-size: 40px;
     position: relative;
-}
-
-.logo img,
-.footer img {
-    width: 30%;
-    top: 0;
 }
 
 .header-bottom {
@@ -324,10 +324,17 @@ p.copy-right a:hover {
     height: 50%;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .logo_banner {
+        grid-template-columns: 1fr 3fr;
+    }
     .logo {
-        width: 5%;
-        height: 70%;
+        width: 20%;
+        height: 20%;
+    }
+    .banner {
+        width: 20em;
+        height: 10em;
     }
     .container {
         width: 750px;
@@ -356,7 +363,7 @@ p.copy-right a:hover {
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         width: 970px;
     }
@@ -374,7 +381,7 @@ p.copy-right a:hover {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: 1170px;
     }
@@ -382,14 +389,14 @@ p.copy-right a:hover {
 
 @media print {
     .hidden-print {
-        display: none !important;
+        display: none;
     }
 }
 
 .attr-filter img {
-    width: 10%!important;
+    width: 10%;
 }
 
 .starimg {
-    width: 6%!important;
+    width: 6%;
 }

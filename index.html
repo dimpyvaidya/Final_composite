@@ -13,11 +13,15 @@
 
 <body>
     <div class="header-top">
-        <div class="container">
-            <div class="header logo">
-                <a href=""><img src="images/logo.svg" alt=" " />
+        <div>
+            <div class=" logo">
+                <a href=""><img src="images/FashionClubLogo.svg" alt=" " />
                 </a>
             </div>
+            <!-- <div>
+                just added the gif as made for the banner animation project
+                <img src="images/FashionClubBanner.gif" alt=" " />
+            </div> -->
 
         </div>
     </div>
@@ -43,15 +47,15 @@
                             <li class=""><a href="#"><span>Login</span></a></li>
                             <li class=""><a href="#"><span>My Cart</span></a></li>
                         </ul>
-                        <button id="clr_btn" class="searchbtn hidden" onClick="clearAllFilters()">Clear searches</button>
+                        <button id="clr_btn" class="searchbtn hidden">Clear searches</button>
                     </div>
                     <div class="header">
                         <div class="searchbox">
                             <input type="search" id="product_name" class="searcharea" name="Search" placeholder="Search for a Product..." required="">
-                            <button onClick="searchProduct()" type="button" class="searchbtn" aria-label="Left Align">Search</button>
+                            <button id="search_btn" type="button" class="searchbtn" aria-label="Left Align">Search</button>
+
                         </div>
                     </div>
-
                 </nav>
             </div>
         </div>
@@ -153,11 +157,13 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product description in detail-->
             <div class="searcharea all_product_block" id="products_list"></div>
             <div id="details" class="hidden">
                 <div>
-                    <a href="javascript:;" onclick="backToList()">Back to List</a>
+                    <a href="javascript:;" id="back_to_list" onclick="backToList()">Back to List</a>
+
                     <div>
                         <div class="header">
                             <div>
@@ -168,7 +174,7 @@
                             <h3 id="pdetails_name"> </h3>
                             <h3 id="pdetails_price"> </h3>
                             <h4>
-                                Category: <span id="pdetails_category"></span> | Type: <span id="pdetails_type"></span> | Size: <span id="pdetails_size"></span> | Color: <span id="pdetails_color"></span>
+                                Category: <span id="pdetails_category"></span> | Type: <span id="pdetails_type"></span> | Color: <span id="pdetails_color"></span>
                             </h4>
                             <p id="pdetails_desc"> </p>
                             <div id="pdetails_rating">
@@ -179,14 +185,15 @@
             </div>
             <nav aria-label="Page navigation example" id="pagination_bloack">
                 <ul class="pagination">
-                    <li class="page-item"><a href="javascript:prevPage()" id="btn_prev" href="#">Previous</a></li>
+                    <li class="page-item"><a href="javascript:" id="btn_prev" href="#">Previous</a></li>
                     <li class="page-item"><span id="page"></span></li>
-                    <li class="page-item"><a href="javascript:nextPage()" id="btn_next" href="#">Next</a></li>
+                    <li class="page-item"><a href="javascript:" id="btn_next" href="#">Next</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
+    <!-- footer -->
     <div class="footer">
         <div class="container">
             <p class="copy-right"><strong>&copy 2019 FashionClub.com, L.P. All rights reserved.</strong></p>

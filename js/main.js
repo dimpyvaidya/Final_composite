@@ -1,4 +1,4 @@
-var products = [{
+let products = [{
         id: 1111,
         name: 'Nice Watch',
         price: '199',
@@ -240,277 +240,183 @@ var products = [{
     },
     {
         id: 1131,
-        name: 'Handbag',
-        price: '99',
+        name: 'GIORDANO',
+        price: '899',
         rating: '2',
         description: "gold watch",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'black',
         deal: 'new',
         image: 'images/hp1.jpg'
     },
     {
         id: 1132,
-        name: 'Handbag',
-        price: '99',
+        name: 'Diana Korr',
+        price: '299',
         rating: '3',
         description: "gold watch",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'all',
         deal: 'new',
         image: 'images/hp2.jpg'
     },
     {
         id: 1133,
-        name: 'Handbag',
-        price: '99',
+        name: 'Caprese',
+        price: '799',
         rating: '3',
-        description: "gold watch",
+        description: "Caprese bag",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'black',
         deal: 'new',
         image: 'images/hp3.jpg'
     },
     {
         id: 1134,
-        name: 'Handbag',
-        price: '99',
+        name: 'Diana Korr',
+        price: '399',
         rating: '3',
-        description: "gold watch",
+        description: "Diana Korr",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'all',
         deal: 'new',
         image: 'images/hp4.jpg'
     },
     {
         id: 1135,
-        name: 'Handbag',
-        price: '99',
+        name: 'Wildcraft',
+        price: '599',
         rating: '3',
-        description: "gold watch",
+        description: "Wildcraft bag",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'all',
         deal: 'new',
         image: 'images/hp5.jpg'
     },
     {
         id: 1136,
-        name: 'Handbag',
-        price: '99',
+        name: 'Diana Korr',
+        price: '499',
         rating: '3',
-        description: "gold watch",
+        description: "Diana Korr ",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'black',
         deal: 'new',
         image: 'images/hp6.jpg'
     },
     {
         id: 1137,
-        name: 'Handbag',
-        price: '80',
+        name: 'Lino Perros',
+        price: '800',
         rating: '3',
-        description: "gold watch",
+        description: "Lino Perros",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'brown',
         deal: 'new',
         image: 'images/hp7.jpg'
     },
     {
         id: 1138,
-        name: 'Handbag',
-        price: '99',
+        name: 'Caprese',
+        price: '350',
         rating: '3',
-        description: "gold watch",
+        description: "Caprese bag",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'black',
         deal: 'new',
         image: 'images/hp8.jpg'
     },
     {
         id: 1139,
-        name: 'Handbag',
-        price: '99',
+        name: 'Alessia',
+        price: '999',
         rating: '3',
-        description: "gold watch",
+        description: "Alessia bag",
         category: 'handbag',
         type: 'leather',
-        color: 'red',
+        color: 'brown',
         deal: 'new',
         image: 'images/hp9.jpg'
     },
 ];
-var records_per_page = 9;
-var main_product_list = products;
-var current_page = 1;
-var pr_cate = 'watches';
-var watchedArray = products.filter(function(itm) {
+
+let records_per_page = 9;
+let main_product_list = products;
+let current_page = 1;
+let pr_cate = 'watches';
+
+//by default watches
+let watchedArray = products.filter(function(itm) {
     return itm.category == 'watches';
 });
-var filterOptions = [];
-var str = getProductList(watchedArray);
+let filterOptions = [];
+let str = getProductList(watchedArray);
 
 document.getElementById('products_list').innerHTML = str;
 
-var classname = document.getElementsByClassName("filter");
-var arr_filter = document.getElementsByClassName("attr-filter");
-var price_filter = document.getElementsByClassName("price-filter");
-var star_filter = document.getElementsByClassName("star-filter");
-var sort_filter = document.getElementsByClassName("sort-filter");
+let classname = document.getElementsByClassName("filter");
+let arr_filter = document.getElementsByClassName("attr-filter");
+let price_filter = document.getElementsByClassName("price-filter");
+let star_filter = document.getElementsByClassName("star-filter");
+let sort_filter = document.getElementsByClassName("sort-filter");
 
-var myFunction = function() {
-    var attribute = this.getAttribute("data-type");
+//watch-bag toggle
 
+let myFunction = function() {
+    let attribute = this.getAttribute("data-type");
     if (attribute == 'handbag') {
         pr_cate = 'handbag';
-        var HandbagArray = products.filter(function(itm) {
+        let HandbagArray = products.filter(function(itm) {
             return itm.category == 'handbag';
         });
-
-        var str = getProductList(HandbagArray);
+        let str = getProductList(HandbagArray);
         document.getElementById('products_list').innerHTML = str;
     } else {
         pr_cate = 'wacthes';
-        var watchedArray = products.filter(function(itm) {
+        let watchedArray = products.filter(function(itm) {
             return itm.category == 'watches';
         });
 
-        var str = getProductList(watchedArray);
+        let str = getProductList(watchedArray);
         document.getElementById('products_list').innerHTML = str;
     }
 };
-var filtering = function() {
-    var type = this.getAttribute("data-type");
-    var val = this.getAttribute("data-val");
-    const found = filterOptions.some(el => el[type] === val);
-    if (!found) {
-        filterOptions.push({
-            [type]: val
-        });
-    }
-    let condition = '';
-    var filter_array = [];
-    for (var product in products) {
-        for (var filter in filterOptions) {
-            for (var key in filterOptions[filter]) {
-                if (products[product][key] == filterOptions[filter][key] && products[product].category == pr_cate) {
-                    filter_array.push(products[product]);
-                }
-            }
-        }
-    }
-    var element = document.getElementById("clr_btn");
-    element.classList.remove("hidden");
-    var str = getProductList(filter_array);
-    document.getElementById('products_list').innerHTML = str;
-}
-var starFilter = function() {
-    var type = this.getAttribute("data-type");
-    var val = this.getAttribute("data-val");
-    filterOptions = filterOptions.filter(function(item, index, obj) {
-        return !("rating" in item);
-    });
-    filterOptions.push({
-        [type]: val
-    });
-    let condition = '';
-    var filter_array = [];
-    for (var product in products) {
-        for (var filter in filterOptions) {
-            for (var key in filterOptions[filter]) {
-                if (products[product][key] == filterOptions[filter][key] && products[product].category == pr_cate) {
-                    filter_array.push(products[product]);
-                }
-            }
-        }
-    }
-    var element = document.getElementById("clr_btn");
-    element.classList.remove("hidden");
-    var str = getProductList(filter_array);
-    document.getElementById('products_list').innerHTML = str;
-}
-var priceFilter = function() {
-    var value = this.getAttribute("data-val");
-    var HandbagArray = products.filter(function(itm) {
-        return parseInt(itm.price) <= parseInt(value) && itm.category == pr_cate;
-    });
-    var str = getProductList(HandbagArray);
-    document.getElementById('products_list').innerHTML = str;
-};
 
-var sortFilter = function() {
-    var value = this.getAttribute("data-type");
-    var filter = products.filter(function(itm) {
-        return itm.category == pr_cate;
-    });
-    if (value == 'name')
-        var result = sortByKey(filter, value, this.getAttribute("data-val"));
-    else {
-        if (this.getAttribute("data-val") == 'asc') {
-            var result = filter.sort(function(a, b) {
-                var x = parseInt(a.price);
-                var y = parseInt(b.price);
-                return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-            });
-        } else {
-            var result = filter.sort(function(a, b) {
-                var x = parseInt(a.price);
-                var y = parseInt(b.price);
-                return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-            });
-        }
-    }
-    var str = getProductList(result);
-    document.getElementById('products_list').innerHTML = str;
-}
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', myFunction, false);
-}
-for (var i = 0; i < arr_filter.length; i++) {
-    arr_filter[i].addEventListener('click', filtering, false);
-}
-for (var i = 0; i < price_filter.length; i++) {
-    price_filter[i].addEventListener('click', priceFilter, false);
-}
-for (var i = 0; i < star_filter.length; i++) {
-    star_filter[i].addEventListener('click', starFilter, false);
-}
-for (var i = 0; i < sort_filter.length; i++) {
-    sort_filter[i].addEventListener('click', sortFilter, false);
-}
 
+//display products
 function getProductList(plist, page = 1) {
     main_product_list = plist;
-    var btn_next = document.getElementById("btn_next");
-    var btn_prev = document.getElementById("btn_prev");
-    var listing_table = document.getElementById("products_list");
-    var page_span = document.getElementById("page");
+    let btn_next = document.getElementById("btn_next");
+    let btn_prev = document.getElementById("btn_prev");
+    let listing_table = document.getElementById("products_list");
+    let page_span = document.getElementById("page");
 
     if (page < 1) page = 1;
     if (page > numPages(plist)) page = numPages(plist);
 
     listing_table.innerHTML = "";
 
-    var str = '';
+    let str = '';
 
-    for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < plist.length; i++) {
+    for (let i = (page - 1) * records_per_page; i < (page * records_per_page) && i < plist.length; i++) {
         str = str + '<div class="filter_portion product_block">';
         str = str + '<a href="javascript:;" onClick="details(' + plist[i].id + ')"><div class="product-img">';
         str = str + '<img src="' + plist[i].image + '" alt="" />';
         str = str + '</div></a>';
-        var gold_length = parseInt(plist[i].rating);
-        var gray_length = 5 - parseInt(plist[i].rating);
-        for (var k = 0; k < gold_length; k++) {
+        let gold_star_length = parseInt(plist[i].rating);
+        let gray_star_length = 5 - parseInt(plist[i].rating);
+        for (let k = 0; k < gold_star_length; k++) {
             str = str + "<i><img src='images/star.png' class='starimg' aria-hidden='true'></i>";
         }
-        for (var k = 0; k < gray_length; k++) {
+        for (let k = 0; k < gray_star_length; k++) {
             str = str + "<i><img src='images/star-gray.png' class='starimg' aria-hidden='true'></i>";
         }
         str = str + '<h4>' + plist[i].name + '</h4>';
@@ -540,31 +446,15 @@ function clearAllFilters() {
 
 //searching product
 function searchProduct() {
-    var value = (document.getElementById("product_name").value).toLowerCase();
-    var nameArray = products.filter(function(itm) {
-        var name = itm.name.toLowerCase();
+    let value = (document.getElementById("product_name").value).toLowerCase();
+    let nameArray = products.filter(function(itm) {
+        let name = itm.name.toLowerCase();
         return name.indexOf(value) >= 0 && itm.category == pr_cate;
     });
-    var str = getProductList(nameArray);
+    let str = getProductList(nameArray);
     document.getElementById('products_list').innerHTML = str;
 }
 
-//ascending-descending
-function sortByKey(array, key, order) {
-    if (order == 'asc') {
-        return array.sort(function(a, b) {
-            var x = a[key];
-            var y = b[key];
-            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-        });
-    } else {
-        return array.sort(function(a, b) {
-            var x = a[key];
-            var y = b[key];
-            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-        });
-    }
-}
 
 //particular product 
 function details(id) {
@@ -572,13 +462,13 @@ function details(id) {
     let image = '<img  src="' + product.image + '" data-imagezoom="true" alt="">';
     let name = product.name;
     let description = product.description;
-    var gold_length = parseInt(product.rating);
-    var gray_length = 5 - parseInt(product.rating);
+    let gold_star_length = parseInt(product.rating);
+    let gray_star_length = 5 - parseInt(product.rating);
     rating = '';
-    for (var k = 0; k < gold_length; k++) {
+    for (let k = 0; k < gold_star_length; k++) {
         rating = rating + "<i><img src='images/star.png' class='starimg' aria-hidden='true'></i>";
     }
-    for (var k = 0; k < gray_length; k++) {
+    for (let k = 0; k < gray_star_length; k++) {
         rating = rating + "<i><img src='images/star-gray.png' class='starimg' aria-hidden='true'></i>";
     }
 
@@ -591,23 +481,133 @@ function details(id) {
     document.getElementById('pdetails_category').innerHTML = product.category;
     document.getElementById('pdetails_color').innerHTML = product.color;
     document.getElementById('pdetails_type').innerHTML = product.type;
-    document.getElementById('pdetails_size').innerHTML = product.size;
     document.getElementById('details').classList.remove("hidden");
     document.getElementById('products_list').classList.add("hidden");
     document.getElementById('pagination_bloack').classList.add("hidden");
 }
 
+// go back to home page
 function backToList() {
     document.getElementById('products_list').classList.remove("hidden");
     document.getElementById('details').classList.add("hidden");
     document.getElementById('pagination_bloack').classList.remove("hidden");
 }
 
+//Sort : ascending-descending sort
+function sortByKey(array, key, order) {
+    if (order == 'asc') {
+        return array.sort(function(a, b) {
+            let x = a[key];
+            let y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    } else {
+        return array.sort(function(a, b) {
+            let x = a[key];
+            let y = b[key];
+            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        });
+    }
+}
+
+//Sort : price filter  
+let sortFilter = function() {
+    let value = this.getAttribute("data-type");
+    let filter = products.filter(function(itm) {
+        return itm.category == pr_cate;
+    });
+    if (value == 'name')
+        var result = sortByKey(filter, value, this.getAttribute("data-val"));
+    else {
+        if (this.getAttribute("data-val") == 'asc') {
+            var result = filter.sort(function(a, b) {
+                var x = parseInt(a.price);
+                var y = parseInt(b.price);
+                return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+            });
+        } else {
+            var result = filter.sort(function(a, b) {
+                var x = parseInt(a.price);
+                var y = parseInt(b.price);
+                return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+            });
+        }
+    }
+    var str = getProductList(result);
+    document.getElementById('products_list').innerHTML = str;
+}
+
+
+//price filter
+let priceFilter = function() {
+    let value = this.getAttribute("data-val");
+    let HandbagArray = products.filter(function(itm) {
+        return parseInt(itm.price) <= parseInt(value) && itm.category == pr_cate;
+    });
+    let str = getProductList(HandbagArray);
+    document.getElementById('products_list').innerHTML = str;
+};
+
+//category filter
+let filtering = function() {
+    let type = this.getAttribute("data-type");
+    let val = this.getAttribute("data-val");
+    const found = filterOptions.some(el => el[type] === val);
+    if (!found) {
+        filterOptions.push({
+            [type]: val
+        });
+    }
+    let condition = '';
+    let filter_array = [];
+    for (let product in products) {
+        for (let filter in filterOptions) {
+            for (let key in filterOptions[filter]) {
+                if (products[product][key] == filterOptions[filter][key] && products[product].category == pr_cate) {
+                    filter_array.push(products[product]);
+                }
+            }
+        }
+    }
+    let element = document.getElementById("clr_btn");
+    element.classList.remove("hidden");
+    let str = getProductList(filter_array);
+    document.getElementById('products_list').innerHTML = str;
+}
+
+//star filter
+let starFilter = function() {
+    let type = this.getAttribute("data-type");
+    let val = this.getAttribute("data-val");
+    filterOptions = filterOptions.filter(function(item, index, obj) {
+        return !("rating" in item);
+    });
+    filterOptions.push({
+        [type]: val
+    });
+    let condition = '';
+    let filter_array = [];
+    for (let product in products) {
+        for (let filter in filterOptions) {
+            for (let key in filterOptions[filter]) {
+                if (products[product][key] == filterOptions[filter][key] && products[product].category == pr_cate) {
+                    filter_array.push(products[product]);
+                }
+            }
+        }
+    }
+    let element = document.getElementById("clr_btn");
+    element.classList.remove("hidden");
+    let str = getProductList(filter_array);
+    document.getElementById('products_list').innerHTML = str;
+}
+
+
 /* Pagination */
 function prevPage() {
     if (current_page > 1) {
         current_page--;
-        var str = getProductList(main_product_list, current_page);
+        let str = getProductList(main_product_list, current_page);
         document.getElementById('products_list').innerHTML = str;
     }
 }
@@ -615,7 +615,7 @@ function prevPage() {
 function nextPage() {
     if (current_page < numPages(main_product_list)) {
         current_page++;
-        var str = getProductList(main_product_list, current_page);
+        let str = getProductList(main_product_list, current_page);
         document.getElementById('products_list').innerHTML = str;
     }
 }
@@ -623,3 +623,26 @@ function nextPage() {
 function numPages(objJson) {
     return Math.ceil(objJson.length / records_per_page);
 }
+
+//calling function
+
+for (let i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', myFunction, false);
+}
+for (let i = 0; i < arr_filter.length; i++) {
+    arr_filter[i].addEventListener('click', filtering, false);
+}
+for (var i = 0; i < price_filter.length; i++) {
+    price_filter[i].addEventListener('click', priceFilter, false);
+}
+for (let i = 0; i < star_filter.length; i++) {
+    star_filter[i].addEventListener('click', starFilter, false);
+}
+for (let i = 0; i < sort_filter.length; i++) {
+    sort_filter[i].addEventListener('click', sortFilter, false);
+}
+document.getElementById("clr_btn").onclick = clearAllFilters;
+document.getElementById("search_btn").onclick = searchProduct;
+document.getElementById("back_to_list").onclick = backToList;
+document.getElementById("btn_prev").onclick = prevPage;
+document.getElementById("btn_next").onclick = nextPage;
