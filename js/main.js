@@ -7,7 +7,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'black',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap1.jpg'
     },
     {
@@ -19,7 +19,7 @@ var products = [{
         category: 'watches',
         type: 'sports',
         color: 'all',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap2.jpg'
     },
     {
@@ -31,7 +31,7 @@ var products = [{
         category: 'watches',
         type: 'casual',
         color: 'gold',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap3.jpg'
     },
     {
@@ -43,7 +43,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'brown',
-        size: 'extra-large',
+        deal: 'twenty',
         image: 'images/wap4.jpg'
     },
     {
@@ -55,7 +55,7 @@ var products = [{
         category: 'watches',
         type: 'sports',
         color: 'black',
-        size: 'large',
+        deal: 'twenty',
         image: 'images/wap5.jpg'
     },
     {
@@ -67,7 +67,7 @@ var products = [{
         category: 'watches',
         type: 'casual',
         color: 'blue',
-        size: 'large',
+        deal: 'twenty',
         image: 'images/wap6.jpg'
     },
     {
@@ -79,7 +79,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'brown',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap7.jpg'
     },
     {
@@ -91,7 +91,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'black',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap8.jpg'
     },
     {
@@ -103,7 +103,7 @@ var products = [{
         category: 'watches',
         type: 'sports',
         color: 'black',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap9.jpg'
     },
     {
@@ -115,7 +115,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'gold',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap10.jpg'
     },
     {
@@ -127,7 +127,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'brown',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap11.jpg'
     },
     {
@@ -139,7 +139,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'brown',
-        size: 'small',
+        deal: 'new',
         image: 'images/wap12.jpg'
     },
     {
@@ -151,7 +151,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'blue',
-        size: 'extra-large',
+        deal: 'twenty',
         image: 'images/wap13.jpg'
     },
     {
@@ -163,7 +163,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'gold',
-        size: 'large',
+        deal: 'twenty',
         image: 'images/wap14.jpg'
     },
     {
@@ -175,7 +175,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'blue',
-        size: 'large',
+        deal: 'twenty',
         image: 'images/wap15.jpg'
     },
     {
@@ -187,7 +187,7 @@ var products = [{
         category: 'watches',
         type: 'casual',
         color: 'all',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap16.jpg'
     },
     {
@@ -199,7 +199,7 @@ var products = [{
         category: 'watches',
         type: 'chain',
         color: 'blue',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap17.jpg'
     },
     {
@@ -211,7 +211,7 @@ var products = [{
         category: 'watches',
         type: 'casual',
         color: 'all',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap18.jpg'
     },
     {
@@ -223,7 +223,7 @@ var products = [{
         category: 'watches',
         type: 'leather',
         color: 'black',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap19.jpg'
     },
     {
@@ -235,7 +235,7 @@ var products = [{
         category: 'watches',
         type: 'casual',
         color: 'blue',
-        size: 'medium',
+        deal: 'fifty',
         image: 'images/wap20.jpg'
     },
     {
@@ -247,7 +247,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp1.jpg'
     },
     {
@@ -259,7 +259,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp2.jpg'
     },
     {
@@ -271,7 +271,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp3.jpg'
     },
     {
@@ -283,7 +283,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp4.jpg'
     },
     {
@@ -295,7 +295,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp5.jpg'
     },
     {
@@ -307,7 +307,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp6.jpg'
     },
     {
@@ -319,7 +319,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp7.jpg'
     },
     {
@@ -331,7 +331,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp8.jpg'
     },
     {
@@ -343,7 +343,7 @@ var products = [{
         category: 'handbag',
         type: 'leather',
         color: 'red',
-        size: 'small',
+        deal: 'new',
         image: 'images/hp9.jpg'
     },
 ];
