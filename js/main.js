@@ -8,6 +8,7 @@ let products = [{
         type: 'chain',
         color: 'black',
         deal: 'new',
+        qty: '3',
         image: 'images/wap1.jpg'
     },
     {
@@ -20,6 +21,7 @@ let products = [{
         type: 'sports',
         color: 'all',
         deal: 'new',
+        qty: '1',
         image: 'images/wap2.jpg'
     },
     {
@@ -32,6 +34,7 @@ let products = [{
         type: 'casual',
         color: 'gold',
         deal: 'new',
+        qty: '60',
         image: 'images/wap3.jpg'
     },
     {
@@ -44,6 +47,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'twenty',
+        qty: '4',
         image: 'images/wap4.jpg'
     },
     {
@@ -56,6 +60,7 @@ let products = [{
         type: 'sports',
         color: 'black',
         deal: 'twenty',
+        qty: '3',
         image: 'images/wap5.jpg'
     },
     {
@@ -68,6 +73,7 @@ let products = [{
         type: 'casual',
         color: 'blue',
         deal: 'twenty',
+        qty: '10',
         image: 'images/wap6.jpg'
     },
     {
@@ -80,6 +86,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'fifty',
+        qty: '100',
         image: 'images/wap7.jpg'
     },
     {
@@ -92,6 +99,7 @@ let products = [{
         type: 'chain',
         color: 'black',
         deal: 'fifty',
+        qty: '120',
         image: 'images/wap8.jpg'
     },
     {
@@ -104,6 +112,7 @@ let products = [{
         type: 'sports',
         color: 'black',
         deal: 'fifty',
+        qty: '10',
         image: 'images/wap9.jpg'
     },
     {
@@ -116,6 +125,7 @@ let products = [{
         type: 'chain',
         color: 'gold',
         deal: 'new',
+        qty: '110',
         image: 'images/wap10.jpg'
     },
     {
@@ -128,6 +138,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'new',
+        qty: '10',
         image: 'images/wap11.jpg'
     },
     {
@@ -140,6 +151,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'new',
+        qty: '100',
         image: 'images/wap12.jpg'
     },
     {
@@ -152,6 +164,7 @@ let products = [{
         type: 'leather',
         color: 'blue',
         deal: 'twenty',
+        qty: '2',
         image: 'images/wap13.jpg'
     },
     {
@@ -164,6 +177,7 @@ let products = [{
         type: 'chain',
         color: 'gold',
         deal: 'twenty',
+        qty: '1',
         image: 'images/wap14.jpg'
     },
     {
@@ -176,6 +190,7 @@ let products = [{
         type: 'chain',
         color: 'blue',
         deal: 'twenty',
+        qty: '10',
         image: 'images/wap15.jpg'
     },
     {
@@ -188,6 +203,7 @@ let products = [{
         type: 'casual',
         color: 'all',
         deal: 'fifty',
+        qty: '102',
         image: 'images/wap16.jpg'
     },
     {
@@ -200,6 +216,7 @@ let products = [{
         type: 'chain',
         color: 'blue',
         deal: 'fifty',
+        qty: '1',
         image: 'images/wap17.jpg'
     },
     {
@@ -212,6 +229,7 @@ let products = [{
         type: 'casual',
         color: 'all',
         deal: 'fifty',
+        qty: '109',
         image: 'images/wap18.jpg'
     },
     {
@@ -224,6 +242,7 @@ let products = [{
         type: 'leather',
         color: 'black',
         deal: 'fifty',
+        qty: '10',
         image: 'images/wap19.jpg'
     },
     {
@@ -236,6 +255,7 @@ let products = [{
         type: 'casual',
         color: 'blue',
         deal: 'fifty',
+        qty: '11',
         image: 'images/wap20.jpg'
     },
     {
@@ -248,6 +268,7 @@ let products = [{
         type: 'leather',
         color: 'black',
         deal: 'new',
+        qty: '10',
         image: 'images/hp1.jpg'
     },
     {
@@ -260,6 +281,7 @@ let products = [{
         type: 'leather',
         color: 'all',
         deal: 'new',
+        qty: '102',
         image: 'images/hp2.jpg'
     },
     {
@@ -272,6 +294,7 @@ let products = [{
         type: 'leather',
         color: 'black',
         deal: 'new',
+        qty: '102',
         image: 'images/hp3.jpg'
     },
     {
@@ -284,6 +307,7 @@ let products = [{
         type: 'leather',
         color: 'all',
         deal: 'new',
+        qty: '10',
         image: 'images/hp4.jpg'
     },
     {
@@ -296,6 +320,7 @@ let products = [{
         type: 'leather',
         color: 'all',
         deal: 'new',
+        qty: '120',
         image: 'images/hp5.jpg'
     },
     {
@@ -308,6 +333,7 @@ let products = [{
         type: 'leather',
         color: 'black',
         deal: 'new',
+        qty: '1',
         image: 'images/hp6.jpg'
     },
     {
@@ -320,6 +346,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'new',
+        qty: '1',
         image: 'images/hp7.jpg'
     },
     {
@@ -332,6 +359,7 @@ let products = [{
         type: 'leather',
         color: 'black',
         deal: 'new',
+        qty: '2',
         image: 'images/hp8.jpg'
     },
     {
@@ -344,6 +372,7 @@ let products = [{
         type: 'leather',
         color: 'brown',
         deal: 'new',
+        qty: '10',
         image: 'images/hp9.jpg'
     },
 ];
@@ -421,6 +450,18 @@ function getProductList(plist, page = 1) {
         }
         str = str + '<h4>' + plist[i].name + '</h4>';
         str = str + '<h4 class="price">' + '$' + plist[i].price + '</h4>';
+        // quantity will color change
+        if (plist[i].qty == 1) {
+            str = str + '<h5 class="qty_one">' + 'Hurry up !!! Only ' + plist[i].qty + ' left' + '</h5>';
+        } else if (plist[i].qty > 1 && plist[i].qty < 5) {
+            str = str + '<h5 class="qty_less_five">' + 'Only ' + plist[i].qty + ' left !' + '</h5>';
+        } else if (plist[i].qty > 5 && plist[i].qty < 50) {
+            str = str + '<h5 class="qty_less_fifty">' + plist[i].qty + ' available ' + '</h5>';
+        } else {
+            str = str + '<h5 class="qty_avail">' + 'Stock available' + '</h5>';
+        }
+
+        // 
         str = str + '<button class="cart_button">Add to Cart</button>';
         str = str + '<button class="cart_button">Buy Now</button></div>';
     }

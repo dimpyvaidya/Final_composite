@@ -348,6 +348,23 @@ p.copy-right a:hover {
     color: darkred;
 }
 
+.qty_one {
+    background-color: red;
+    color: white;
+}
+
+.qty_less_five {
+    color: orangered;
+}
+
+.qty_less_fifty {
+    color: blue;
+}
+
+.qty_avail {
+    color: green;
+}
+
 @media screen and (min-width: 768px) {
     .logo_banner {
         grid-template-columns: 1fr 3fr;
@@ -355,6 +372,17 @@ p.copy-right a:hover {
     .logo {
         width: 20%;
         height: 20%;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mainmenu {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mainmenu a {
+        padding: 0 1em;
     }
     .banner {
         width: 20em;
