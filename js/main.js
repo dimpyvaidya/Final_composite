@@ -497,12 +497,13 @@ function searchProduct() {
 }
 
 
-//particular product 
+//particular product  
 function details(id) {
     product = products.find(x => x.id === id);
     let image = '<img  src="' + product.image + '" data-imagezoom="true" alt="">';
     let name = product.name;
     let description = "<h4>Product Description :</h4>" + product.description + '<br><br>';
+
     let gold_star_length = parseInt(product.rating);
     let gray_star_length = 5 - parseInt(product.rating);
     rating = '';
