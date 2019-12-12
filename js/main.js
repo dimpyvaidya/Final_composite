@@ -3,7 +3,7 @@ let products = [{
         name: 'Nice Watch',
         price: '199',
         rating: '3',
-        description: "Nice Watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'chain',
         color: 'black',
@@ -15,7 +15,7 @@ let products = [{
         name: 'Red Watch',
         price: '150',
         rating: '2',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'sports',
         color: 'all',
@@ -27,7 +27,7 @@ let products = [{
         name: 'Dobo Watch',
         price: '200',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'casual',
         color: 'gold',
@@ -39,7 +39,7 @@ let products = [{
         name: 'Hodo Watch',
         price: '250',
         rating: '3',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'brown',
@@ -51,7 +51,7 @@ let products = [{
         name: 'P-Shock Watch',
         price: '280',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'sports',
         color: 'black',
@@ -63,7 +63,7 @@ let products = [{
         name: 'xxxx Watch',
         price: '310',
         rating: '5',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'casual',
         color: 'blue',
@@ -75,7 +75,7 @@ let products = [{
         name: 'Max Watch',
         price: '350',
         rating: '5',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'brown',
@@ -87,7 +87,7 @@ let products = [{
         name: 'Ruhu Watch',
         price: '400',
         rating: '1',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'chain',
         color: 'black',
@@ -99,7 +99,7 @@ let products = [{
         name: 'huku Watch',
         price: '500',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'sports',
         color: 'black',
@@ -123,7 +123,7 @@ let products = [{
         name: 'Red Watch',
         price: '195',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'brown',
@@ -135,7 +135,7 @@ let products = [{
         name: 'Titan Watch',
         price: '220',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'brown',
@@ -147,7 +147,7 @@ let products = [{
         name: 'Hodo Watch',
         price: '260',
         rating: '3',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'blue',
@@ -159,7 +159,7 @@ let products = [{
         name: 'S-Shock Watch',
         price: '420',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'chain',
         color: 'gold',
@@ -171,7 +171,7 @@ let products = [{
         name: 'quizt Watch',
         price: '310',
         rating: '5',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'chain',
         color: 'blue',
@@ -183,7 +183,7 @@ let products = [{
         name: 'Rado Watch',
         price: '350',
         rating: '5',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'casual',
         color: 'all',
@@ -195,7 +195,7 @@ let products = [{
         name: 'Ruhu Watch',
         price: '400',
         rating: '1',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'chain',
         color: 'blue',
@@ -207,7 +207,7 @@ let products = [{
         name: 'huku Watch',
         price: '500',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'casual',
         color: 'all',
@@ -219,7 +219,7 @@ let products = [{
         name: 'Timex Watch',
         price: '400',
         rating: '1',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'leather',
         color: 'black',
@@ -231,7 +231,7 @@ let products = [{
         name: 'G-shok Watch',
         price: '530',
         rating: '4',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'watches',
         type: 'casual',
         color: 'blue',
@@ -243,7 +243,7 @@ let products = [{
         name: 'GIORDANO',
         price: '899',
         rating: '2',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'handbag',
         type: 'leather',
         color: 'black',
@@ -255,7 +255,7 @@ let products = [{
         name: 'Diana Korr',
         price: '299',
         rating: '3',
-        description: "gold watch",
+        description: "Shipping Weight: 81.6 | Batteries 1 Lithium Metal batteries required. (included)| Item model number: 4332841807 | Model Year : 2019 | Water resistant depth : 100.00 Feet",
         category: 'handbag',
         type: 'leather',
         color: 'all',
@@ -420,7 +420,9 @@ function getProductList(plist, page = 1) {
             str = str + "<i><img src='images/star-gray.png' class='starimg' aria-hidden='true'></i>";
         }
         str = str + '<h4>' + plist[i].name + '</h4>';
-        str = str + '<h5>' + '$' + plist[i].price + '</h5></div>';
+        str = str + '<h4 class="price">' + '$' + plist[i].price + '</h4>';
+        str = str + '<button class="cart_button">Add to Cart</button>';
+        str = str + '<button class="cart_button">Buy Now</button></div>';
     }
 
     page_span.innerHTML = page + " of " + numPages(plist);
@@ -461,7 +463,7 @@ function details(id) {
     product = products.find(x => x.id === id);
     let image = '<img  src="' + product.image + '" data-imagezoom="true" alt="">';
     let name = product.name;
-    let description = product.description;
+    let description = "<h4>Product Description :</h4>" + product.description + '<br><br>';
     let gold_star_length = parseInt(product.rating);
     let gray_star_length = 5 - parseInt(product.rating);
     rating = '';

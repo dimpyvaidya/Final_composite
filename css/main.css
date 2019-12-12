@@ -206,7 +206,7 @@ img {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #00e58b;
+    background-color: gray;
 }
 
 .searchbox input[type="search"] {
@@ -243,13 +243,13 @@ img {
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #fff;
-    background-color: #00e58b;
+    background-color: gray;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #fff;
-    background-color: #00e58b;
+    background-color: gray;
 }
 
 .product_block {
@@ -260,6 +260,26 @@ img {
     position: relative;
     box-shadow: 0 0 1px #bbb;
     padding: 10px;
+}
+
+.cart_button {
+    padding: 0.7em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 1em;
+    margin-right: 0.1em;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.cart_button:hover {
+    background-color: gray;
+    color: white;
 }
 
 p.copy-right {
@@ -322,6 +342,10 @@ p.copy-right a:hover {
 .particular_product_img {
     width: 50%;
     height: 50%;
+}
+
+.price {
+    color: darkred;
 }
 
 @media screen and (min-width: 768px) {
